@@ -1,0 +1,290 @@
+*{
+      /* Чтобы не было тупых отступов в пару пикселей от краёв */
+    box-sizing:border-box;
+    padding:0px;
+    border:0px;
+    margin:0px;
+}
+
+ header{  /*Заголовок,что валяется в верху сайта*/
+position:sticky;
+top:0px;
+height:60px;
+display:flex;
+align-items:center;
+background-color: rgb(253, 244, 237);
+}
+
+.logoAndName{ /*Иконка и имя в заголовке*/
+    margin-left:4%;
+        font-family: 'Mochiy Pop P One', sans-serif;  
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-right:2%;
+}
+
+.logo{ /*Иконка в заголовке*/
+    height:50px;
+    width:50px;
+}
+
+.textNearLogo{ /*Имя в заголовке*/
+    padding-left:15px;
+    font-size:1.4rem;
+}
+
+.headerButtons { /*Кнопочки в заголовке справа*/
+position:absolute;
+margin:0;
+right:30px;
+display:flex;
+flex-direction:row;
+gap:15px;
+list-style:none;
+}
+
+.tp_text{ /*Каждая отдельная кнопочка=текст*/
+    font-family: 'Oswald', sans-serif;
+    color:black;
+    text-decoration: none;
+    font-size:1.4rem;
+}
+
+.tp_text:hover{
+    color:orange;
+}
+
+.projectPreview{ /*Кусок с картиночкой и куда текст потом налепляется*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("images/povar.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e8e2d0;
+    margin-left: 5px;
+}
+
+.previewTextWrapper{
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5em;
+}
+
+.previewText{
+    border: solid;
+    background-color: rgba(0,0,0,0.4);
+    color:rgb(235, 231, 231);
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border-color: #FFD9BE;
+}
+
+.previewText h1{
+font-family: 'Mochiy Pop P One', sans-serif;   
+}
+
+body{
+    background-color: #e8e2d0;
+    font-family: 'Merriweather', serif;
+}
+
+.newSectionHeader{  /*Заглавие новой секции*/
+font-size:2rem;
+}
+
+
+.anotherEntry{      /*Новая секция собственной персоной*/
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    gap:3rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.roundElement{
+    display: flex;
+    flex-direction: row; /*Чтоб картинка и гора текста стояли в ряд,можно наоборот*/
+    align-items: center;
+
+    width: auto;
+    height:auto;
+
+    padding-top: 2rem; /*ОТСТУПЛЕНИЕ ТЕКСТА ОТ КРАЕШКОВ ОБЪЕКТА*/
+    padding-bottom: 2rem;
+    padding-right:2rem;
+    padding-left:1rem;
+
+    margin:0 auto;
+    gap: 1rem;
+    border-radius: 30px;
+
+    background-color: rgba(250, 249, 255, 0.822);
+    box-shadow: inset 0 0 10px orange ;
+} 
+
+#OurSpecialty{
+flex-direction:column !important;
+text-align: justify;
+padding-left:2%;
+}
+
+
+.roundElement:hover{
+    box-shadow:0 0 10px orange;
+}
+.reversedRoundElement:hover{
+    box-shadow:0 0 10px orange;
+}
+
+
+.reversedRoundElement{
+    display: flex;
+    flex-direction: row-reverse !important; /*Чтоб картинка и гора текста стояли в ряд,можно наоборот*/
+    align-items: center;
+
+    width: auto;
+    height:auto;
+
+    padding-top: 2rem; /*ОТСТУПЛЕНИЕ ТЕКСТА ОТ КРАЕШКОВ ОБЪЕКТА*/
+    padding-bottom: 2rem;
+    padding-right:1rem;
+    padding-left:2rem;
+
+    margin:0 auto;
+    gap: 1rem;
+    border-radius: 30px;
+
+    background-color: rgba(250, 249, 255, 0.822);
+    box-shadow: inset 0 0 10px orange ;
+} 
+
+.textBox{
+    justify-content: center;
+    padding-top: 1rem; 
+    width: 700px;
+    font-size: 1rem; 
+}
+
+#aboutProgram{
+    text-align: justify;
+}
+
+
+
+.contactGroup{
+    padding-bottom:1%;
+    gap:2%;
+justify-content: center;
+width:100%;
+margin-left:30%;
+margin:auto 0;
+display:flex;
+flex-direction: row;
+}
+
+.oneMember{
+    background-color:rgb(245, 239, 229);
+    align-items:center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    border:none;
+    border-color:orange;
+    border-radius: 50px;
+    height:400px;
+    width:300px;
+}
+
+.oneMember:hover{
+    box-shadow:0 0 15px orange;
+    transition: box-shadow .3s;
+}
+
+.oneMember a{
+    width:70%;
+    height:10%;
+    align-items:center;
+    text-align: center;
+    padding-top:3%;
+    color:black;
+    text-decoration: none;
+    border:solid 1px;
+    border-color:orange;
+    border-radius:10px;
+    background-color:rgb(255, 255, 255);
+}
+
+.oneMember a:hover{
+    background-color:rgb(196, 145, 52);
+    color:white;
+}
+
+
+.oneMember img{ /*Фото одного сопартийца*/
+    min-width:100px;
+    max-width:530px;
+    min-height:150px;
+    max-height:683px;
+    width:80%;
+    height:85%;
+    padding-bottom:10%;
+    border-radius: 60%;
+}
+
+.addressContactsColumn{
+display:flex;
+flex-direction:column;
+color:rgb(230, 0, 0);
+gap:0.5rem;
+padding-bottom:3rem;
+}
+
+.pic img{ /*Картиночки в тексте кроме интерфейса*/
+width:auto;
+height:auto;
+margin: 0 auto;
+}
+
+.longboi img{ /*Только интерфейс*/
+width:60%;
+height:70%;
+margin: 0 auto;
+}
+
+#pic2{
+    max-width:600px;
+    max-height:400px;
+}
+
+#pic3{
+    max-width:600px;
+    max-height:400px;
+}
+
+#pic4{
+    max-width:600px;
+    max-height:400px;
+}
+
+#pic5{
+    max-width:600px;
+    max-height:400px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
